@@ -1,24 +1,28 @@
 {
   "name": "@fastvue/directive",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "dayu",
   "description": "vue的常用指令集",
   "type": "module",
   "main": "dist/chunk.cjs.js",
   "module": "dist/chunk.esm.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jywud/fastvue.git"
+    "url": "https://github.com/Jywud/fastvue/tree/master/packages/directive"
   },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jywud/fastvue/issues"
   },
-  "homepage": "https://github.com/Jywud/fastvue#readme",
+  "homepage": "https://github.com/Jywud/fastvue/blob/master/packages/directive/README.md",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",

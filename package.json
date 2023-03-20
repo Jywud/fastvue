@@ -1,0 +1,11 @@
+{
+  "name": "fastvue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "build:directive": "pnpm run -F directive build"
+  },
+  "license": "ISC"
+}

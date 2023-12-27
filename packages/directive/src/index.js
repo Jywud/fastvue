@@ -5,6 +5,9 @@ import waterMarker from './waterMarker.js'
 import draggable from './draggable.js'
 import emoji from './emoji.js'
 import focus from './focus.js'
+import clickOutside from './focus.js'
+import disableClick from './disableClick.js'
+import infiniteScroll from './infiniteScroll.js'
 
 const directives = {
     debounce,
@@ -13,7 +16,10 @@ const directives = {
     waterMarker,
     draggable,
     emoji,
-    focus
+    focus,
+    clickOutside,
+    disableClick,
+    infiniteScroll
 }
 
 export default {

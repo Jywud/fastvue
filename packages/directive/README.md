@@ -34,7 +34,7 @@ Vue.use(Directives);
 
 #### 按钮点击防抖
 
-```js
+```html
 <template>
   // 不传时间默认1000ms
   <button v-debounce="debounceClick">防抖按钮</button>
@@ -76,14 +76,14 @@ export default {
 #### 图片懒加载
 
 将组件内 标签的 src 换成 v-LazyLoad
-```js
+```html
 <img v-LazyLoad="xxx.jpg" />
 ```
 
 #### 添加水印
 
 使用，设置水印文案，颜色，字体大小即可
-```js
+```html
 <template>
   <div v-waterMarker="{text:'dayu',textColor:'#ddd'}"></div>
 </template>
@@ -91,7 +91,7 @@ export default {
 #### 元素拖拽
 
 使用: 在 Dom 上加上 v-draggable 即可
-```js
+```html
 <template>
   <div v-draggable></div>
 </template>
@@ -100,7 +100,7 @@ export default {
 #### 限制输入框特殊字符输入
 
 将需要校验的输入框加上 v-emoji 即可
-```js
+```html
 <template>
   <input type="text" v-model="note" v-emoji />
 </template>
@@ -109,8 +109,35 @@ export default {
 #### 输入框自动获取焦点
 
 将需要校验的输入框加上 v-focus 即可
-```js
+```html
 <template>
   <input type="text" v-model="note" v-focus />
+</template>
+```
+
+#### 判断点击事件是否发生在指定的元素外部
+
+将需要校验的元素加上 v-clickOutside 即可
+```html
+<template>
+  <div v-clickOutside="handleClickOutside"></div>
+</template>
+```
+#### 用于禁用点击事件
+
+将需要校验的元素加上 v-disableClick 即可
+```html
+<template>
+  <div v-disableClick="isDisabled"></div>
+</template>
+```
+#### 无限滚动加载
+
+这个指令用于实现无限滚动加载。它接受一个函数作为参数，该函数将在滚动到页面底部时调用。
+```html
+<template>
+  <div v-infinite-scroll="loadMoreData" style="height: 500px; overflow-y: scroll;">  
+    <div v-for="item in items" :key="item.id">{{ item.name }}</div>  
+  </div>
 </template>
 ```

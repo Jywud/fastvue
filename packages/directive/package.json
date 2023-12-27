@@ -3,9 +3,14 @@
   "version": "1.1.2",
   "author": "dayu",
   "description": "vue的常用指令集",
-  "type": "module",
   "main": "dist/chunk.cjs.js",
   "module": "dist/chunk.esm.js",
+  "type": "module",
+  "keywords": [
+    "vue常用指令",
+    "vue指令集",
+    "directive"
+  ],
   "files": [
     "dist",
     "src"
